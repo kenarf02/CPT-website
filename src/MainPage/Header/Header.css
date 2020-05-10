@@ -28,3 +28,6 @@ display: flex;
 .Logo-Container:hover{
     opacity: 30%;
 }
+#TOP{
+    margin-top: -100vh;
+}

@@ -6,6 +6,7 @@ render(){
 return(
 <div className = "Content-body">
 <ClothesList></ClothesList>
+
 </div>);
 }
 

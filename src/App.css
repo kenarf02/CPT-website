@@ -3,7 +3,7 @@
     height: 100%;
     position: absolute; top: 0; left: 0;
 }
-.body{
+html{
     scroll-behavior: smooth;
 }
 .Wrapper{

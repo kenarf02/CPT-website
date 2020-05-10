@@ -13,7 +13,7 @@ class TopScrollbar extends React.Component{
             <a href>O nas</a> 
             </div>
             <div className="Middle"> 
-            <h1 className="Title">CPT</h1>
+         <a href="#TOP"> <h1 className="Title">CPT</h1></a>  
             </div>
             <div className="End">
             <img className="Cart" src={drawing}></img>
