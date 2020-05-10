@@ -1,0 +1,27 @@
+.List-element{
+    display: inline-block;
+    width: 20%;
+    height: 45vh;
+    margin-left: 4%;
+    margin-top: 2%;
+    background-color: #3D3B3C;
+}
+.Information{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FFFBFC;
+}
+.Product-name{
+    margin-bottom: -1%;
+}
+.Image{
+    object-fit: fill;
+width: 80%;
+height: 60%;
+}
