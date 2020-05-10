@@ -1,0 +1,30 @@
+.HeaderBody{
+    height: 100%;
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    background-image: radial-gradient(#191919,#1d1d1d) ;
+    display: flex;
+    top: 0;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+.Logo{
+    position: relative;
+    width: 30%;
+}
+.Logo-Container {
+position: relative;
+width: fit-content;
+height: fit-content;
+display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    opacity: 100%;
+    transition: .5s ease-in-out;
+}
+.Logo-Container:hover{
+    opacity: 30%;
+}
