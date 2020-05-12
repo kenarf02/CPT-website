@@ -1,6 +1,7 @@
 import React from 'react';
 import ListElement from '../ListElement/ListElement';
 import './ClothesList.css'
+import Header from '../../Header/Header';
 
 class ClothesList extends React.Component{
 
@@ -30,6 +31,7 @@ componentDidMount(){
                     name = {Clothes.Name}
                     cost = {Clothes.Cost}
                     url = {Clothes.Url}
+                    
                />
                ))}
                
