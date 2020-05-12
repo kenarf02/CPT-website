@@ -23,9 +23,11 @@ componentDidMount(){
 }
 CreatePopUp =() =>{
     window.$renderobj = <InspectedElement
-    name={this.props.name}></InspectedElement>;
+    name={this.props.name}
+    cost = {this.props.cost}
+    url = {this.props.url}
+    ></InspectedElement>;
     ReactDOM.render(<App></App>,document.getElementById('root'))
-    document.getElementById("");
 }
     render(){
         const name = this.props.name;
@@ -33,8 +35,7 @@ CreatePopUp =() =>{
         const url = this.props.url;
     return(
         <div className="List-element">
-     
-            <div className="Information">
+     <div className ="List-Wrap"><div className="Information">
                 <img src= {url} className="Image"></img>
                     <h1 className="Product-name">{name}</h1>
                     <h2 className="Product-price">{price} zł</h2>            
@@ -45,7 +46,8 @@ CreatePopUp =() =>{
             <p className ="Product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis est ut risus gravida convallis nec eu eros. Fusce non mauris nec lectus volutpat venenatis. Aliquam erat volutpat. Vestibulum eleifend ante eu augue blandit, sit amet porta mauris fringilla. </p>
 <button className = "Add-to-Cart" onClick={this.CreatePopUp}>Zobacz więcej</button>
 
-            </div>
+            </div></div>
+            
         </div>
     );
 

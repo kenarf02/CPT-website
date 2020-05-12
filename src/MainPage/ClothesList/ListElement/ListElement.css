@@ -1,11 +1,12 @@
 .List-element{
+    position: relative;
     display: inline-block;
-    width: 20%;
-    height: 45vh;
-    margin-left: 4%;
-    margin-top: 4%;
+    width: 20em;
+    height: 30em;
+    margin-left: 1%;
+    margin-top: 1%;
     background-color: #3D3B3C;
-    transition: transform 0.8s ease-in-out;
+    transition: transform 0.5s ease-in-out;
   transform-style: preserve-3d;
 }
 .List-element:hover{
@@ -23,6 +24,7 @@
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  overflow: hidden;
 }
 .Information{
     width: 100%;
@@ -76,5 +78,5 @@ height: 60%;
     margin-bottom: -1%;
     margin-left: 3%;
     margin-right: 3%;
-    margin-top: -3%;
+    margin-top: 2%;
 }

@@ -12,6 +12,7 @@ function App() {
   return (
 
     <div className = "Wrapper" id ="Wrapper">
+      <meta  content="width=device-width, initial-scale=1.0"></meta>
      <TopScrollbar></TopScrollbar>
 <Header></Header>
      <ContentBody></ContentBody>

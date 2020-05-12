@@ -27,13 +27,14 @@ componentDidMount(){
     return(
         <div>
             {this.state.Clothes ? (<div className="row">
-               {this.state.Clothes.map(Clothes=>(<ListElement
+                <div className="Wrap-List"> {this.state.Clothes.map(Clothes=>(<ListElement
                     name = {Clothes.Name}
                     cost = {Clothes.Cost}
                     url = {Clothes.Url}
                     
                />
-               ))}
+               ))}</div>
+              
                
                 
         </div>
