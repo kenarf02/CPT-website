@@ -1,5 +1,4 @@
 .row{
-    
     margin:0,auto;
     padding:1px;
     margin-top: 1%;
@@ -8,10 +7,12 @@
     justify-content: center;
 }
 #Shop{
-    margin-top: 10vh;
+    margin-top: 20%;
 }
 .Wrap-List{
     width: 70%;
+    align-self: center;
+    justify-self: center;
     
 }
 @keyframes slideInFromLeft {
@@ -22,3 +23,13 @@
       opacity:100%;
     }
   }
+
+  @media (max-width : 900px) {
+    .Wrap-List{
+      width: 86%;
+      align-self: center;
+      justify-self: center;
+      
+  }
+    }
+    

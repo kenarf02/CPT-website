@@ -1,3 +1,4 @@
+
 .Storage{
 width: 60%;
     height: 70%;
@@ -12,22 +13,38 @@ width: 60%;
     animation: 1.4s ease-out 0s 1 slideInFromLeft;
 }
 .Inspect-Img{
-    width: 20em;
-    height: 20em;
+    width: 20%;
+    height: auto;
     margin-top: 3%;
     margin-left: 5%;
     margin-right: 5%;
     animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 .InspectedElement{
-    margin-top: 3%;
+    height: 100%;
     display: flex;
+    align-items: center;
+    justify-items: center;
 }
 .GetBack{
-    width: 20%;
+    width: 200px;
+    justify-self: flex-start;
+    align-self: flex-start;
+    position: absolute;
+    top: 104%;
+    left: -2%;
+    border: none;
+    background-color: transparent;
+    color: red;
+    size: 64px;
 }
 .Inspect-Price{
-    margin-top: -2%;
+    margin-top: -3%;
+    font-size: 4vh;
+
+}
+.Inspect-Name{
+    font-size: 6vh;
 }
 .Add-To-Cart{
     background-color:#F13030;
@@ -39,13 +56,18 @@ width: 60%;
 	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-size:17px;
     padding:16px 31px;
-    width: 20%;
+    width: 200px;
     align-self: center;
-    height: 20%;
+    height: 100px;
     margin-top: 15%;
     margin-bottom: 10%;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #1d1d1d;
+}
+.GetBackCross{
+    color: black;
+    width: 60px;
+    height: auto;
 }
 @keyframes slideInFromLeft {
     0% {
@@ -55,4 +77,32 @@ width: 60%;
       opacity:100%;
     }
   }
-  
+  @media (max-width : 900px) {
+    .Storage{
+        display: inline;
+    }
+    .Inspect-Img{
+        width: 50%;
+        height: auto;
+        animation: 1s ease-out 0s 1 slideInFromLeft;
+    }
+    .InspectedElement{
+        margin-top: 5%;
+        display: inline;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+    }
+    .GetBack{
+        margin-top: -10%;
+        margin-right: 70%;
+        margin-left: -10%;
+        width: 170px;
+        height: 120px;
+        position: relative;
+    }
+    .GetBackCross{
+        width: 40px;
+        height: auto;
+    }
+  }

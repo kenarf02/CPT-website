@@ -1,6 +1,6 @@
 .HeaderBody{
     min-height: 100%;
-    width: 100%;
+    max-width: 100%;
     background-image: radial-gradient(#191919,#1d1d1d) ;
     display: flex;
     background-size: cover;
