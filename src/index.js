@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import ClothesList from './MainPage/ClothesList/ClothesList/ClothesList';
 
-window.$renderobj = <ClothesList></ClothesList>
+window.$InspectObjProps = {cost : 0,name:"null",url:""}
 
 ReactDOM.render(
   <React.StrictMode>

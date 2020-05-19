@@ -3,6 +3,7 @@ import './ListElement.css'
 import InspectedElement from './InspectedElement';
 import App from '../../../App';
 import ReactDOM from'react-dom';
+import history from '../../../BrowserHistory'
 
 class ListElement extends React.Component{
 
@@ -22,12 +23,10 @@ componentDidMount(){
     });
 }
 CreatePopUp =() =>{
-    window.$renderobj = <InspectedElement
-    name={this.props.name}
-    cost = {this.props.cost}
-    url = {this.props.url}
-    ></InspectedElement>;
-    ReactDOM.render(<App></App>,document.getElementById('root'))
+    window.$InspectObjProps.url = this.state.url
+    window.$InspectObjProps.name = this.state.name
+    window.$InspectObjProps.cost =this.state.cost;
+    history.push({pathname : '/InspectElement'})
 }
     render(){
         const name = this.props.name;

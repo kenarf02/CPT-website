@@ -1,8 +1,12 @@
 import React from 'react';
 import './TopScrollBar.css'
 import drawing from './drawing.svg'
-class TopScrollbar extends React.Component{
+import history from '../BrowserHistory'
 
+class TopScrollbar extends React.Component{
+goToCart(){
+history.push('/cart')
+}
     render(){
         return(
         <div className="top-scrollbar">
@@ -16,7 +20,7 @@ class TopScrollbar extends React.Component{
          <a href="#TOP"> <h1 className="Title">CPT</h1></a>  
             </div>
             <div className="End">
-            <img className="Cart" src={drawing}></img>
+           <button onClick ={this.goToCart}><img className="Cart" src={drawing}></img></button> 
             </div>
            
         </div>

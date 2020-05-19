@@ -5,6 +5,10 @@ import TopScrollbar from './TopScrollBar/TopScrollBar';
 import ContentBody from './MainPage/Body/Body';
 import Cart from './MainPage/Cart/Cart.js';
 import ClothesList from './MainPage/ClothesList/ClothesList/ClothesList';
+import { Router, Route } from 'react-router-dom';
+import history from './BrowserHistory'
+import InspectedElement from './MainPage/ClothesList/ListElement/InspectedElement';
+import CartPage from './MainPage/Cart/CartPage';
 
 
 function App() {
@@ -14,8 +18,19 @@ function App() {
     <div className = "Wrapper" id ="Wrapper">
       <meta  content="width=device-width, initial-scale=1.0, user-scalable=0"></meta>
      <TopScrollbar></TopScrollbar>
-<Header></Header>
+     <Router history = {history}>
+       <Route exact path = '/'>
+       <Header></Header>
      <ContentBody></ContentBody>
+       </Route>
+      <Route path = '/InspectElement'>
+    <InspectedElement></InspectedElement>
+      </Route>
+      <Route path ='/cart'>
+        <CartPage></CartPage>
+      </Route>
+     </Router>
+
     </div>
   );
 }
