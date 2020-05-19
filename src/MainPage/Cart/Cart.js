@@ -1,6 +1,9 @@
 import React from 'react';
 
-class Cart {
-    Cart=[];
+
+
+var Cart = {
+    List:[],
+    Total:0
 }
-export default Cart;
+export default Cart; 
