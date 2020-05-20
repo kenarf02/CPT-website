@@ -1,0 +1,14 @@
+.Cart-element{
+    display: flex;
+    align-items: center;
+}
+.cart-img{
+    padding-right: 5%;
+    width: 8%;
+    height: auto;
+    align-self: center;
+    justify-self: flex-start;
+}
+.cost{
+    padding-left: 2%;
+}

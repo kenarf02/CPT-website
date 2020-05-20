@@ -1,0 +1,34 @@
+.Storage-cart{
+    margin-top: 5rem;
+    width: 80%;
+    height: 85%;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+}
+.row-cart{
+overflow-y: scroll;
+height: 60%;
+align-self: flex-end;
+}
+.Total-cart{
+    text-align: center;
+    margin-top: 5%;
+    justify-self: last baseline;
+}
+.Add-To-Cart-Cart{
+    background-color:#F13030;
+	border-radius:28px;
+	border:1px solid #F13030;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size:17px;
+    padding:16px 31px;
+    width: 200px;
+    height: 100px;
+    align-self: center;
+    justify-self: center;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1d1d1d;
+}

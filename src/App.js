@@ -14,7 +14,6 @@ import CartPage from './MainPage/Cart/CartPage';
 function App() {
   const [RenderState, setRenderState] = useState(<ClothesList></ClothesList>)
   return (
-
     <div className = "Wrapper" id ="Wrapper">
       <meta  content="width=device-width, initial-scale=1.0, user-scalable=0"></meta>
      <TopScrollbar></TopScrollbar>
@@ -27,7 +26,9 @@ function App() {
     <InspectedElement></InspectedElement>
       </Route>
       <Route path ='/cart'>
+        <div className = "Wrapper-cart">
         <CartPage></CartPage>
+        </div>
       </Route>
      </Router>
 
