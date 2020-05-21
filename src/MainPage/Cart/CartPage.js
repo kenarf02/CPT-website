@@ -2,6 +2,8 @@ import Cart from './Cart'
 import React from 'react'
 import CartElement from './CartElement';
 import './CartPage.css'
+
+
 class CartPage extends React.Component{
     state={
 Clothes:Cart.List
@@ -19,7 +21,6 @@ Clothes:Cart.List
                />
                ))}</div>
               
-               
        
         </div>
     ):(<h1>Ładowanie Produktów...</h1>)
