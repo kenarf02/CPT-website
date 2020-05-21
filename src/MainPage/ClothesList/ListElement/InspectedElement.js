@@ -7,7 +7,6 @@ import cross from './close.svg'
 import Cart from '../../Cart/Cart'
 import history from '../../../BrowserHistory'
 
-
 class Item{
     id= 0;
  Cost = 0;
@@ -35,6 +34,7 @@ url :''
     }
 
     AddToCart =()=>{
+        
         var param = new Item;
         param.Cost = this.state.cost;
         param.url = this.state.url;
@@ -43,8 +43,7 @@ url :''
         param.size = document.getElementById("Size").value;
         param.TonBack = document.getElementById("TOnBack").value;
         Cart.List.push(param);
-        Cart.Total += param.cost;
-        console.log()
+        window.localStorage.setItem("Cart",JSON.stringify(Cart.List))
     }
 
     render(){
