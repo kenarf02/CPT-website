@@ -40,6 +40,7 @@ url :''
         param.url = this.state.url;
         param.name = this.state.name;
         param.id = Cart.List.length;
+        console.log(param.id)
         param.size = document.getElementById("Size").value;
         param.TonBack = document.getElementById("TOnBack").value;
         Cart.List.push(param);

@@ -23,7 +23,7 @@ class CartPage extends React.Component{
                     cost = {List.Cost}
                     url = {List.url}
                     size = {List.size}
-                    
+                    id = {List.id}
                />
                ))}</div>
               

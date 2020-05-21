@@ -1,6 +1,9 @@
 .Cart-element{
     display: flex;
     align-items: center;
+    width: 100%;
+    height: 30%;
+    box-sizing: border-box;
 }
 .cart-img{
     padding-right: 5%;
@@ -9,6 +12,22 @@
     align-self: center;
     justify-self: flex-start;
 }
-.cost{
-    padding-left: 2%;
+.cost-cart{
+    justify-self: flex-start;
+    align-self: center;
+    margin-top: 4%;
+    margin-right: auto;
+    font-size: 2vw;
+    margin-left: -17%;
+}
+.Remove-Cart{
+    justify-self: flex-end;
+    margin-left: auto;
+    align-self: center;
+}
+.name-cart{
+    margin-right: auto;
+    font-size: 3vw;
+  align-self: center;
+  justify-self: center;
 }
