@@ -18,12 +18,12 @@ goToMain(){
            <BurgerMenu></BurgerMenu>
             </div>
             <div className="Middle"> 
-            <button onClick={this.goToMain} className ="cart-button"> <h1 className="Title">CPT</h1></button>
+            <button onClick={this.goToMain} className ="cart-button"> <h1 className="Title-scrollbar">CPT</h1></button>
             </div>
             <div className="End">
            <button onClick ={this.goToCart} className ="cart-button"><img className="Cart" src={drawing}></img></button> 
             </div>
-           
+         
         </div>
         );
     }

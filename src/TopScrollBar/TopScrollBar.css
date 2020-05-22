@@ -7,21 +7,29 @@
     background-color: #1c1c1c;
     display: grid;
     grid-template-columns: 
-    33% 34% 33%;
+    30% 40% 30%;
     grid-template-rows: 4rem;
 
+}
+.Wrapper-scrollbar{
+    display: flex;
+    width: 100vw;
+    justify-content: flex-end;
 }
 .Menu{
     justify-self: flex-start;
     align-self: center;
     justify-items: center;
     align-items: center;
+    justify-self: center;
     width: 100%;
 }
 .Middle{
-    justify-self: center;
-    align-self: flex-end;
+    align-self: center;
     width: 100%;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
 }
 .End{
     justify-self: flex-end;
@@ -34,16 +42,18 @@ a{
     justify-self: center;
     align-self: center;
     color: #FFFBFC;
-    padding-left: 3%;
 }
-.Title{
+.Title-scrollbar{
   grid-column: 2;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
     color: #FFFBFC;
 }
 .Cart{
     margin-top: 0%;
     margin-left: 0%;
-    justify-self: flex-end;
+    justify-self: flex-start;
     align-self: flex-end;
     width: 60px;
 }
@@ -53,7 +63,7 @@ text-decoration: none;
 .cart-button{
     background-color: transparent;
     border: transparent;
-    width: 90%;
+    width: 150px;
     outline:none;
 align-self: center;
 justify-self: flex-end;
