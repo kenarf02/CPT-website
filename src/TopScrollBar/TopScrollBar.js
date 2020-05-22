@@ -2,6 +2,7 @@ import React from 'react';
 import './TopScrollBar.css'
 import drawing from './drawing.svg'
 import history from '../BrowserHistory'
+import BurgerMenu from './BurgerMenu';
 
 class TopScrollbar extends React.Component{
 goToCart(){
@@ -14,10 +15,7 @@ goToMain(){
         return(
         <div className="top-scrollbar">
             <div className= "Menu">
-            <a href >Sklep</a>
-            <a href>LookBook S/S 2020</a>
-            <a href>Kontakt</a>
-            <a href>O nas</a> 
+           <BurgerMenu></BurgerMenu>
             </div>
             <div className="Middle"> 
             <button onClick={this.goToMain} className ="cart-button"> <h1 className="Title">CPT</h1></button>

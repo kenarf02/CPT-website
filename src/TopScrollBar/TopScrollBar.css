@@ -44,8 +44,8 @@ a{
     margin-top: 0%;
     margin-left: 0%;
     justify-self: flex-end;
-    align-self: center;
-    width: 10%;
+    align-self: flex-end;
+    width: 60px;
 }
 a:link {
 text-decoration: none;
@@ -53,5 +53,9 @@ text-decoration: none;
 .cart-button{
     background-color: transparent;
     border: transparent;
-    width: 100%;
+    width: 90%;
+    outline:none;
+align-self: center;
+justify-self: flex-end;
+cursor: pointer;
 }

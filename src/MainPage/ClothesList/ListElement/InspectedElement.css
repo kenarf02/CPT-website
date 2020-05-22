@@ -15,7 +15,7 @@ width: 60%;
 .Inspect-Img{
     width: 20%;
     height: auto;
-    margin-top: 3%;
+    margin-top: 100px;
     margin-left: 5%;
     margin-right: 5%;
     animation: 1s ease-out 0s 1 slideInFromLeft;
