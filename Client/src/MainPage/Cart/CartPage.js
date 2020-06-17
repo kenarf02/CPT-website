@@ -2,10 +2,14 @@ import Cart from './Cart'
 import React from 'react'
 import CartElement from './CartElement';
 import './CartPage.css'
+import history from '../../BrowserHistory'
 
 class CartPage extends React.Component{
     state ={
         Clothes : JSON.parse(window.localStorage.getItem("Cart"))
+    }
+    GoToCheckout(){
+        history.push('checkout')
     }
     GenerateTotal(){
         let sum =0;
@@ -31,8 +35,8 @@ class CartPage extends React.Component{
         </div>
     ):(<h1>Chwilowo w koszyku nie ma produktów </h1>)
 }
-<h1 className = "Total-cart">W sumie: {this.GenerateTotal()} zł</h1>
- <button className ="Add-To-Cart-Cart">Checkout</button>       
+<h1 className = "Total-cart">W sumie: {this.GenerateTotal()/100} zł</h1>
+ <button className ="Add-To-Cart-Cart" onClick={this.GoToCheckout}>Checkout</button>       
              </div>
         )}
 }

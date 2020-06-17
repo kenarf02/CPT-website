@@ -23,7 +23,7 @@ class CartElement extends React.Component{
 return(<div className = "Cart-element">
    <img src = {this.props.url} className="cart-img"></img>
     <h1 className = "name-cart">{this.props.name}</h1>
-    <h2 className = "cost-cart">{this.props.cost}</h2>
+    <h2 className = "cost-cart">{this.props.cost/100}</h2>
     <button onClick={this.RemoveFromCart} className = "Remove-Cart">usuń</button>
 </div>)
     }

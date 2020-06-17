@@ -9,7 +9,7 @@ import { Router, Route } from 'react-router-dom';
 import history from './BrowserHistory'
 import InspectedElement from './MainPage/ClothesList/ListElement/InspectedElement';
 import CartPage from './MainPage/Cart/CartPage';
-
+import Checkout from './MainPage/Checkout/Checkout'
 
 function App() {
   const [RenderState, setRenderState] = useState(<ClothesList></ClothesList>)
@@ -29,6 +29,9 @@ function App() {
         <div className = "Wrapper-cart">
         <CartPage></CartPage>
         </div>
+      </Route>
+      <Route path = '/checkout'>
+      <Checkout></Checkout>
       </Route>
      </Router>
 
