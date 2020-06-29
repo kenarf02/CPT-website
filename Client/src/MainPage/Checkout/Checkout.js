@@ -1,6 +1,8 @@
 import React from 'react';
 import StripeCheckout from 'react-stripe-checkout';
 import './Checkout.css'
+import  history from '../../BrowserHistory'
+
 class Checkout extends React.Component{
   
     handleToken = token =>{
@@ -16,7 +18,7 @@ class Checkout extends React.Component{
             "Content-Type" : "application/json"
         } 
 
-        return fetch('http://127.0.0.1:8282/payment',{
+        return fetch('http://127.0.0.1:8282/payment-stripe',{
             method:"POST",
             headers,
             body: JSON.stringify(body)
@@ -25,12 +27,12 @@ class Checkout extends React.Component{
             console.log("RESPONSE",response);
             const {status} = response;
             console.log("STATUS", status);
+            window.localStorage.setItem("Cart",JSON.stringify([]));
         })
         .catch(err=>{
 console.log(err);
         })
     }
-    
     GenerateCartString(){
         var temp = '';
         
@@ -50,19 +52,16 @@ console.log(err);
     render(){
     return(
      <div className = "Checkout-Page">
-         <h1>Wybierz metodę płatności:</h1>
          <StripeCheckout
          amount ={this.GenerateTotal()}
           billingAddress
           locale="auto"
+          label="Zapłać kartą"
          stripeKey="pk_test_LOfj4FPCbq7Z92dEmr2IrOGI00oE7XmxYR"
          token ={this.handleToken}
          currency = "PLN"
-         > <button className="Checkout-button">
-             Płacę Kartą
-             </button></StripeCheckout>
+         ></StripeCheckout>
 
-            <span><button className = "Checkout-button">Płacę przy odbiorze</button></span> 
      </div>   
     
     )

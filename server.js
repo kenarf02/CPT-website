@@ -14,7 +14,7 @@ app.use(cors())
 
 //routes
 
-app.post("/payment",(req,res)=>{
+app.post("/payment-stripe",(req,res)=>{
 
 const {amount,token,cart} =req.body;
 console.log(amount+ " token: " + token + cart);
@@ -36,6 +36,15 @@ return stripe.customers.create({
 .catch(err=>console.log(err))
 
 })
+
+app.post("/payment-cash",(req,res)=>{
+
+    const {cart,billing} =req.body;
+    console.log(cart,billing);
+    
+    return (result => res.status(200).json(result))
+    
+    })
 
 //listen
 app.listen(8282,()=>{

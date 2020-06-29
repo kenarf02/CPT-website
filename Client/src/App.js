@@ -10,6 +10,7 @@ import history from './BrowserHistory'
 import InspectedElement from './MainPage/ClothesList/ListElement/InspectedElement';
 import CartPage from './MainPage/Cart/CartPage';
 import Checkout from './MainPage/Checkout/Checkout'
+import ContactPage from './MainPage/Pages/Contact/ContactPage';
 
 function App() {
   const [RenderState, setRenderState] = useState(<ClothesList></ClothesList>)
@@ -33,6 +34,9 @@ function App() {
       <Route path = '/checkout'>
       <Checkout></Checkout>
       </Route>
+      <Route path = '/O_Nas'></Route>
+      <Route path = '/Kontakt'><ContactPage></ContactPage></Route>
+      <Route path = '/lookbook'></Route>
      </Router>
 
     </div>

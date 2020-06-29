@@ -54,7 +54,7 @@ background-color: transparent;
         }
         .navigation{
             height: 50%;
-            width: 30%;
+            width: 300px;
             position: absolute;
             top:67%;
             left: 0;
@@ -62,13 +62,21 @@ background-color: transparent;
             transition: opacity .3s .3s ease-in-out;
         }
         .navigation-list{
-            list-style: none;
+            display: flex;
+            flex-direction: column;
             background-color: white;
-            height: 350%;
+            height: 200px;
+            width: 100%;
+            margin-top: 21px;
+            z-index: 150;
         }
-        .navigation-item{
-            margin-top: 4%;
-        }
+.Burger-menu-button{
+    margin-top: 10px;
+    height: 250%;
+    font-size: 1em;
+    background-color: transparent;
+    border: none;
+}
         .navigation--active{
             opacity: 1;
         }

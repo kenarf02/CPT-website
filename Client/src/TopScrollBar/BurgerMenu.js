@@ -11,6 +11,17 @@ import
         navigation.classList.toggle('navigation--active')
     }
     
+    About_us =()=>{
+        history.push('/O_Nas')
+    }
+
+    Contact = () =>{
+        history.push('/Kontakt')
+    }
+
+    Lookbook = () =>{
+        history.push('/lookbook')
+    }
 
     render(){
        return(<div> <button id ="Burger " onClick = {this.Clickfunc}className="hamburger">
@@ -21,12 +32,11 @@ import
 
         </button>
         <div className = "navigation">
-        <ul className ="navigation-list">
-                <li className ="navigation-item">O nas</li>
-                <li className ="navigation-item">LookBook SS 2020</li>
-                <li className ="navigation-item">Kontakt</li>
-
-            </ul>
+        <div className = "navigation-list">
+            <button className="Burger-menu-button" onClick = {this.About_us}> O nas</button>
+            <button className="Burger-menu-button" onClick = {this.Contact}> Kontakt </button>
+            <button className="Burger-menu-button" onClick = {this.Lookbook}> Kolekcja S/S 2020</button>
+        </div>
         </div>
         </div>)
     }
