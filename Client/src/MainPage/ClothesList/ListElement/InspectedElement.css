@@ -47,16 +47,9 @@ width: 60%;
     font-size: 4vh;
 }
 .Add-To-Cart{
-    background-color:#F13030;
-	border-radius:28px;
-	border:1px solid #F13030;
-	display:inline;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-size:17px;
     padding:16px 31px;
-    width: 200px;
+    width: 300px;
     align-self: center;
     height: 100px;
     margin-top: 15%;

@@ -52,7 +52,7 @@ a{
 }
 .Cart{
     margin-top: 0%;
-    margin-left: 0%;
+    margin-left: -5%;
     justify-self: flex-start;
     align-self: flex-end;
     width: 60px;

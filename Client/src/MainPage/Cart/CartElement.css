@@ -9,33 +9,40 @@
 .cart-img{
     padding-right: 5%;
     width: auto;
-    height: 110px;
+    height: 140px;
     align-self: center;
     justify-self: flex-start;
-}
-.cost-cart{
-    justify-self: flex-end;
-    align-self: center;
-    margin-top: 4%;
-    font-size: 150%;
-    margin-right: 10px;
 }
 .Remove-Cart{
     justify-self: flex-end;
     margin-left: auto;
     align-self: center;
 }
-.name-cart{
-    margin-right: auto;
-    font-size: 20px;
-  align-self: center;
-  justify-self: center;
-}
 .TitleWrapper-Cart{
     width: 600px;
+}
+h2{
+
+    font-size: 30px;
+}
+h3{
+    margin-top: -10px;
+font-size: 24px;
 }
 .Wrap-List-checkout{
    
     height: 100%;
     
+}
+@media (max-width : 900px) {
+h2{
+    font-size: 22px;
+}
+h3{
+    margin-top: -10px;
+font-size: 18px;
+}
+.cart-img{
+    height: 110px; 
+}
 }

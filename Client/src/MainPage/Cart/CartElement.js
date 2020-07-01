@@ -22,8 +22,11 @@ class CartElement extends React.Component{
     render(){
 return(<div className = "Cart-element">
    <img src = {this.props.url} className="cart-img"></img>
-    <span className="TitleWrapper-Cart"><h1 className = "name-cart">{this.props.name}</h1></span>
-    <h2 className = "cost-cart">{this.props.cost/100}</h2>
+        <div className = "Wrapper-content-cart-element">
+    <h2>{this.props.name}</h2>
+    <h3>Rozmiar: {this.props.size}</h3>
+    <h3>Cena: {this.props.cost/100} zł</h3>
+        </div>
     <button onClick={this.RemoveFromCart} className = "Remove-Cart">usuń</button>
 </div> )
     }
