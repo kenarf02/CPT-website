@@ -1,14 +1,15 @@
 .Cart-element{
     display: flex;
     align-items: center;
-    width: 100%;
-    height: 30%;
-    border-bottom: 1px solid #D0D0D0;
+    width: 98%;
+    height: 250px;
+    margin-top: -1px;
+    border-top: 1px solid #D0D0D0;
 }
 .cart-img{
     padding-right: 5%;
-    width: 8%;
-    height: auto;
+    width: auto;
+    height: 110px;
     align-self: center;
     justify-self: flex-start;
 }
@@ -16,7 +17,7 @@
     justify-self: flex-end;
     align-self: center;
     margin-top: 4%;
-    font-size: 2vw;
+    font-size: 150%;
     margin-right: 10px;
 }
 .Remove-Cart{
@@ -26,10 +27,15 @@
 }
 .name-cart{
     margin-right: auto;
-    font-size: 3vw;
+    font-size: 20px;
   align-self: center;
   justify-self: center;
 }
 .TitleWrapper-Cart{
     width: 600px;
+}
+.Wrap-List-checkout{
+   
+    height: 100%;
+    
 }

@@ -59,6 +59,7 @@ background-color: transparent;
             top:67%;
             left: 0;
             opacity: 0;
+            pointer-events: none;
             transition: opacity .3s .3s ease-in-out;
         }
         .navigation-list{
@@ -76,7 +77,9 @@ background-color: transparent;
     font-size: 1em;
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
         .navigation--active{
             opacity: 1;
+            pointer-events: all;
         }

@@ -8,15 +8,15 @@ class ContactPage extends React.Component{
             <span>
                 <h1>Dane Firmy</h1>
                 <p>CPT Brand Kacper Ociepka</p>
-                <p>ul. Dupna 1</p>
+                <p>ul. Szkolna 12</p>
                 <p>71-369 Szczecin</p>
                 <p>NIP: 6969696969</p>
             </span>
             <span>
                 <h1>Biuro Obsługi Klienta</h1>
-                <p>Mail: CPt@Brand.twujstary.pl</p>
+                <p>Mail: CPt@Brand.konmtakt.pl</p>
             </span>
-            <div>
+            <div className = "Wrapper-Contact">
                 <h1>Odezwij się do nas</h1>
                 <form class="Contact-form">
                     <div className = "Contact-Names"> 

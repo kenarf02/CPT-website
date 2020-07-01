@@ -28,7 +28,7 @@ class CartPage extends React.Component{
             <h1 className="HCart">Mój koszyk</h1>
 
       {this.state.Clothes.length >0 ? (<div className="row-cart">
-                <div className="Wrap-List"> {this.state.Clothes.map(List=>(<CartElement
+                <div className="Wrap-List-checkout"> {this.state.Clothes.map(List=>(<CartElement
                     name = {List.name}
                     cost = {List.Cost}
                     url = {List.url}

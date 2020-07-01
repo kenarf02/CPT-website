@@ -60,7 +60,7 @@ console.log(err);
          stripeKey="pk_test_LOfj4FPCbq7Z92dEmr2IrOGI00oE7XmxYR"
          token ={this.handleToken}
          currency = "PLN"
-         ></StripeCheckout>
+         ><button>Zapłać Kartą</button></StripeCheckout>
 
      </div>   
     
