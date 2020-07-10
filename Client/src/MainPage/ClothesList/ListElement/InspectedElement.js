@@ -32,9 +32,8 @@ url :''
             history.push('/')
         }
     }
-
+     iswobbling =false;
     AddToCart =()=>{
-        
         var param = new Item;
         param.Cost = this.state.cost;
         param.url = this.state.url;
@@ -45,8 +44,18 @@ url :''
         param.TonBack = document.getElementById("TOnBack").value;
         Cart.List.push(param);
         window.localStorage.setItem("Cart",JSON.stringify(Cart.List))
+               //wobbling animation of cart icon
+      if(this.iswobbling == false){
+        document.getElementById("Cart").className = "Cart-wobble";
+        this.iswobbling = true;
+        setTimeout(this.wobbleanimBack,1100);
+      }
+        
     }
-
+    wobbleanimBack = ()=>{
+        document.getElementById("Cart").className = "Cart";
+        this.iswobbling = false;
+    }
     render(){
         return(
             <div className ="InspectedElement">
@@ -59,8 +68,8 @@ url :''
             <p className="Inspect-Desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis diam nec risus consequat venenatis. Nam nec laoreet urna. Pellentesque faucibus leo et dignissim gravida. Donec vitae elit bibendum, luctus nisl id, lacinia justo. Fusce ligula nisi, interdum sit amet tellus non, condimentum ornare nunc. Aenean tempor elit vitae tortor ultricies, vitae mattis lacus fringilla. Sed volutpat elit urna, a tristique mi aliquam cursus. Nam ipsum sem, pellentesque nec laoreet non, dictum sed massa. Vivamus dolor enim, aliquet nec maximus fermentum, sagittis nec massa. Maecenas quis ultrices magna. Cras augue nisi, vehicula et ornare quis, porta sed tortor. Proin porta convallis justo at feugiat. Morbi pulvinar diam porttitor turpis sodales, id bibendum ex finibus. Nullam semper et mi nec egestas. Donec fringilla ligula et justo placerat lacinia.</p>
             <label for="TOnBack">Logo na plecach:</label>
             <select id="TOnBack" >
-  <option value="has T">Tak</option>
-  <option value="No T">Nie</option>
+  <option value="Tak">Tak</option>
+  <option value="Nie">Nie</option>
 </select>
 <label for="Size">Rozmiar:</label>
             <select id="Size" >
@@ -70,7 +79,7 @@ url :''
   <option value="XL">XL</option>
   <option value="XXL">XXL</option>
 </select>
-            <button className="Add-To-Cart" onClick={this.AddToCart}>Dodaj do koszyka</button>
+            <button className="Add-to-Cart-inspect" onClick={this.AddToCart}>Dodaj do koszyka</button>
             <span id="Shop"/>
         </div>
             </div>

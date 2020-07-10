@@ -37,14 +37,6 @@ return stripe.customers.create({
 
 })
 
-app.post("/payment-cash",(req,res)=>{
-
-    const {cart,billing} =req.body;
-    console.log(cart,billing);
-    
-    return (result => res.status(200).json(result))
-    
-    })
 
 //listen
 app.listen(8282,()=>{

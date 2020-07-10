@@ -28,7 +28,7 @@ class Checkout extends React.Component{
             const {status} = response;
             console.log("STATUS", status);
             window.localStorage.setItem("Cart",JSON.stringify([]));
-        })
+        }).then(history.push('/Payment-complete'))
         .catch(err=>{
 console.log(err);
         })
@@ -60,7 +60,7 @@ console.log(err);
          stripeKey="pk_test_LOfj4FPCbq7Z92dEmr2IrOGI00oE7XmxYR"
          token ={this.handleToken}
          currency = "PLN"
-         ><button>Zapłać Kartą</button></StripeCheckout>
+         ><button className ="Add-to-Cart-cart">Zapłać Kartą</button></StripeCheckout>
 
      </div>   
     

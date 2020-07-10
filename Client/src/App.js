@@ -11,6 +11,8 @@ import InspectedElement from './MainPage/ClothesList/ListElement/InspectedElemen
 import CartPage from './MainPage/Cart/CartPage';
 import Checkout from './MainPage/Checkout/Checkout'
 import ContactPage from './MainPage/Pages/Contact/ContactPage';
+import Footer from './Footer/footer';
+import CongratulationsPage from './MainPage/Pages/Congratulations Page/Congratulations';
 
 function App() {
   const [RenderState, setRenderState] = useState(<ClothesList></ClothesList>)
@@ -22,6 +24,7 @@ function App() {
        <Route exact path = '/'>
        <Header></Header>
      <ContentBody></ContentBody>
+     <Footer></Footer>
        </Route>
       <Route path = '/InspectElement'>
     <InspectedElement></InspectedElement>
@@ -37,8 +40,11 @@ function App() {
       <Route path = '/O_Nas'></Route>
       <Route path = '/Kontakt'><ContactPage></ContactPage></Route>
       <Route path = '/lookbook'></Route>
+      <Route path = '/Payment-complete'>
+        <CongratulationsPage></CongratulationsPage>
+      </Route>
      </Router>
-
+    
     </div>
   );
 }

@@ -25,9 +25,10 @@ return(<div className = "Cart-element">
         <div className = "Wrapper-content-cart-element">
     <h2>{this.props.name}</h2>
     <h3>Rozmiar: {this.props.size}</h3>
+    <h3>Logo na plecach: {this.props.Logo}</h3>
     <h3>Cena: {this.props.cost/100} zł</h3>
         </div>
-    <button onClick={this.RemoveFromCart} className = "Remove-Cart">usuń</button>
+    <button onClick={this.RemoveFromCart} className = "Add-to-Cart-cart">usuń</button>
 </div> )
     }
 }

@@ -23,7 +23,7 @@ margin:0;
 }
 .Total-cart{
     text-align: center;
-    margin-top: 5%;
+    margin-top: 2%;
     justify-self: last baseline;
 }
 .Add-To-Cart-Cart{
@@ -44,6 +44,7 @@ margin:0;
 }
 .Empty-cart-text{
     text-align: center;
+    margin-top: 25%;
 }
 .Checkout-side{
     width: 30%;

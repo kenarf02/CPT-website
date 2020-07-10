@@ -21,6 +21,14 @@ class CartPage extends React.Component{
         });
         return sum;
     }
+     payments(){
+         const param = JSON.parse(window.localStorage.getItem("Cart"));
+        if(param.length >0){
+            return(<Checkout></Checkout>)
+        }else{
+            return null;
+        }
+    }
     render(){
         return(
         <div className="Storage-cart">
@@ -34,20 +42,21 @@ class CartPage extends React.Component{
                     url = {List.url}
                     size = {List.size}
                     id = {List.id}
+                    Logo = {List.TonBack}
                />
                ))}</div>
               
        
         </div>
-    ):(<h1 className = "Empty-cart-text">Koszyk jest pusty</h1>)
+    ):(<h1 className = "Empty-cart-text">Koszyk jest pusty :(</h1>)
 }
 </div>
 
 <div className= "Checkout-side">
-<h1 className="HCart">Podsumowanie zamówienia</h1>
+<h1 className="HCart">Podsumowanie</h1>
 <div className = "Checkout-cart">
 <h1 className = "Total-cart">W sumie: {this.GenerateTotal()/100} zł</h1>
- <Checkout></Checkout>
+<this.payments></this.payments>
  </div>
  </div>
              </div>

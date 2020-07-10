@@ -1,20 +1,29 @@
 .row{
-    margin:0,auto;
-    padding:1px;
+
     margin-top: 1%;
+    width: 100%;
+    height: auto;
     display: flex;
     animation: 1s ease-out 0s 1 slideInFromLeft;
     justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
 }
 #Shop{
     margin-top: 20%;
 }
 .Wrap-List{
     width: 70%;
-    align-self: center;
+    height: 100%;
+    flex-wrap: wrap;
+    display: flex;
     justify-self: center;
-    
+    align-self: center;
+    justify-content: center;
+  align-items: center;
 }
+
 @keyframes slideInFromLeft {
     0% {
       opacity: 0%;

@@ -8,6 +8,7 @@ class TopScrollbar extends React.Component{
 goToCart(){
 history.push('/cart')
 }
+Counter = 0;
 goToMain(){
     history.push('/')
 }
@@ -21,7 +22,7 @@ goToMain(){
             <button onClick={this.goToMain} className ="cart-button"> <h1 className="Title-scrollbar">CPT</h1></button>
             </div>
             <div className="End">
-           <button onClick ={this.goToCart} className ="cart-button"><img className="Cart" src={drawing}></img></button> 
+        <button onClick ={this.goToCart} className ="cart-button"><img id="Cart" className="Cart" src={drawing}></img></button> 
             </div>
          
         </div>

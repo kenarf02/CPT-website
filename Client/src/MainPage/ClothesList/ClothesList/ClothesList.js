@@ -25,7 +25,8 @@ componentDidMount(){
 }
     render(){
     return(
-        <div>
+        <div className = "wrapper-list">
+            <span id="Shop"/>
             {this.state.Clothes ? (<div className="row">
                 <div className="Wrap-List"> {this.state.Clothes.map(Clothes=>(<ListElement
                     name = {Clothes.Name}
@@ -39,7 +40,7 @@ componentDidMount(){
                 
         </div>
     ):(<h1>Ładowanie Produktów...</h1>)
-}<span id="Shop"/>
+}
          </div>
          );
     }

@@ -1,15 +1,21 @@
 #root{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: absolute; top: 0; left: 0;
 }
 html,body{
     scroll-behavior: smooth;
+    position:fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     overflow-x:hidden;
-    overflow-y: scroll;
+    overflow-y: visible;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
          box-sizing: border-box;
+         width: 100%;
 }
 .Wrapper{
     position: relative;
@@ -27,4 +33,15 @@ justify-content: center;
 display: inline-flex;
 flex-direction: row;
 justify-content: center;
+}
+.Add-to-Cart{
+    background-color: #f22525; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;    
+    cursor: pointer;
 }

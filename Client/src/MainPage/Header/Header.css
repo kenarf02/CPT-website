@@ -6,6 +6,7 @@
     background-size: cover;
     align-items: center;
     justify-content: center;
+    justify-self: center;
 }
 .Logo{
     position: relative;

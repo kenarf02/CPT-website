@@ -1,0 +1,70 @@
+.Footer{
+    max-height: 20%;
+    max-width: 100%;
+    background-image: radial-gradient(#191919,#1d1d1d) ;
+    display: flex;
+    background-size: cover;
+    flex-direction: row;
+    margin-top: 2%;
+    text-align: right;
+}
+
+.Footer-Button{
+    background-color: transparent;
+    width: 100px;
+    height: 50%;
+    border: transparent;
+    cursor: pointer;
+}
+
+.Footer-Button-icon{
+    width: 100%;
+    height: 100%;
+}
+.List-part-footer{
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+    align-items: left;
+    justify-content: center;
+    
+}
+.Button-part-footer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.Button-part-footer h2{
+   color: white;
+}
+
+.Footer{
+    display: flex;
+}
+.Wrapper-footer-button{
+width: 45%;
+height: 50%;
+}
+.Footer-Button-list{
+    background-color: transparent;
+    width: 30%;
+    height: 50%;
+    border: transparent;
+    cursor: pointer;
+    color: white;
+}
+.Footer-Title{
+    text-align: left;
+    margin-right: 3%;
+}
+@media (max-width : 900px) {
+    .Wrapper-footer-button{
+        width: 100%;
+        height: 50%;
+        }
+        .Footer-Title{
+            text-align: left;
+            margin-right: 45px;
+        }
+    }
