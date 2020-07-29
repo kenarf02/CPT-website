@@ -43,6 +43,7 @@ class CartPage extends React.Component{
                     size = {List.size}
                     id = {List.id}
                     Logo = {List.TonBack}
+                    color = {List.color}
                />
                ))}</div>
               
@@ -60,6 +61,7 @@ class CartPage extends React.Component{
  </div>
  </div>
              </div>
-        )}
+        )
+    }
 }
 export default CartPage;

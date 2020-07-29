@@ -1,4 +1,7 @@
-
+label{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
 .Storage{
 width: 60%;
     height: 70%;
@@ -100,5 +103,9 @@ width: 60%;
     .GetBackCross{
         width: 40px;
         height: auto;
+    }
+    .Add-to-Cart-inspect{
+margin-top: 10%;
+margin-bottom: 10%;
     }
   }
