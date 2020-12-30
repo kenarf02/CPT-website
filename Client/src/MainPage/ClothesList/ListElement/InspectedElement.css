@@ -78,10 +78,7 @@ width: 60%;
   }
   @media (max-width : 900px) {
     .Storage{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        height: fit-content;
+        display: inline;
     }
     .Inspect-Img{
         width: 50%;
@@ -89,12 +86,11 @@ width: 60%;
         animation: 1s ease-out 0s 1 slideInFromLeft;
     }
     .InspectedElement{
-        margin-bottom: auto;
+        margin-top: 5%;
+        display: inline;
         align-items: center;
         justify-items: center;
-        justify-content: center;
         text-align: center;
-        flex-wrap: wrap;
     }
     .GetBack{
         margin-top: -10%;
@@ -107,17 +103,6 @@ width: 60%;
     .GetBackCross{
         width: 40px;
         height: auto;
-    }
-    .Inspect-Desc{
-        width: 100%;
-        font-size: 20px;
-        text-align: justify;
-    }
-    .Inspect-Price{
-        font-size:24px;
-    }
-    .Inspect-Name{
-        font-size: 32px;
     }
     .Add-to-Cart-inspect{
 margin-top: 10%;
