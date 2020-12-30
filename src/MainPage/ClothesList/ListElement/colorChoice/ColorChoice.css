@@ -5,7 +5,7 @@
     justify-self: center;
     width: 100%;
     margin-bottom: 2%;
-
+    
 }
 .Color{
     opacity: 0.3;
@@ -27,7 +27,7 @@
     opacity: 1;
 
 }
-.Color:focus {     
+#focused {     
    opacity: 1;  
    outline: none;
     border: none;

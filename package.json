@@ -9,9 +9,11 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "history": "^5.0.0",
     "js-cookie": "^2.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.1",
     "react-stripe-checkout": "^2.6.3",
     "react-stripe-elements": "^6.1.2",
@@ -22,7 +24,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "react-scripts start"
   },
   "repository": {
     "type": "git",
@@ -34,5 +36,17 @@
   "bugs": {
     "url": "https://github.com/kenarf02/CPT-website/issues"
   },
-  "homepage": "https://github.com/kenarf02/CPT-website#readme"
+  "homepage": "https://github.com/kenarf02/CPT-website#readme",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

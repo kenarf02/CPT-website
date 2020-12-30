@@ -17,13 +17,12 @@ class Item{
  TonBack = "Yes";
  color = "";
 }
-var color = "";
+var color = "Czarny";
 class InspectedElement extends React.Component{
     state={
 name:'',
 Cost:0,
 url :'',
-color: 'white'
 };
 
 setColor = (colorarg) =>{
@@ -33,7 +32,7 @@ setColor = (colorarg) =>{
         this.setState({
             name:window.$InspectObjProps.name,
             cost:window.$InspectObjProps.cost,
-            url:window.$InspectObjProps.url
+            url:window.$InspectObjProps.url,
         });
         if(window.$InspectObjProps.cost ===0){
             history.push('/')
